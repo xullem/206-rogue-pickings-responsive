@@ -15,6 +15,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 
 
 }
@@ -25,6 +26,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 
 h1,
@@ -37,6 +39,7 @@ h4 {
 }
 h1 {
 	font-size: 1.875em;
+	width: 100%;
 }
 h2 {
     font-size: 1.5em;
@@ -56,17 +59,22 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	height: 110px;
+	height: auto;
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
+	flex-flow: row wrap;
+	flex-wrap: wrap;
+
 }
 
 header h1 {
 	margin: 0;
 	padding: 38px 0;
+	text-align: center;
+	border-bottom: 3px solid #77a466;
 }
 header h1 span {
 	color: #77a466;
@@ -77,6 +85,7 @@ header nav {
 	padding: 46px 0;
 }
 header nav ul {
+	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
@@ -98,6 +107,7 @@ header nav ul li a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 	margin: 0 auto;
 
 }
@@ -177,6 +187,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 	text-align: center;
 }
 footer span {
@@ -187,7 +198,12 @@ footer span {
 }
 
 /*****TABLET*****/
+@media all and min-width(768px) {
 
+}
 
 
 /*****DESKTOP*****/
+@media all and min-width(1200px) {
+
+}
