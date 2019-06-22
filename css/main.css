@@ -60,7 +60,7 @@ p {
 /*The widths are in a percentage!*/
 header {
 	height: auto;
-	border-bottom: 3px solid #77a466;
+	width: 90%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -72,7 +72,7 @@ header {
 
 header h1 {
 	margin: 0;
-	padding: 38px 0;
+	padding: 20px 0; /*38px DT*/
 	text-align: center;
 	border-bottom: 3px solid #77a466;
 }
@@ -82,10 +82,11 @@ header h1 span {
 
 header nav {
 
-	padding: 46px 0;
+	padding: 20px 0;/*46px 0;*/
 }
 header nav ul {
 	list-style-type: none;
+	line-height: 1.4em;
 	margin: 0;
 	padding: 0;
 }
@@ -119,6 +120,7 @@ header nav ul li a{
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
+	border-top: 3px solid #77a466;
 }
 
 .main-title {
@@ -126,7 +128,7 @@ header nav ul li a{
 
 }
 .main-title h3 {
-	text-align: left;
+	text-align: center;
 	padding: 5px 0;
 	color: #77a466;
 }
@@ -134,19 +136,20 @@ header nav ul li a{
 	padding: 0;
 	font-size: 16px;
 	line-height: 25px;
+	text-align: center;
 }
 
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	height: auto;
 
 	border-top: 1px solid #eee;
 }
 
 .section-one h4 {
-	padding: 10px 0;
+	text-align: center;/*padding: 10px 0;DT*/
 }
 
 .section-two {
@@ -156,12 +159,13 @@ header nav ul li a{
 
 .section-two h4,
 .section-three h4 {
-	padding: 10px 30px;
+	padding: 10px 20px; /*padding: 10px 30px DT;*/
 }
 
 .menu {
 	list-style: none;
-	padding: 0;
+	padding: 10px 20px; /*	padding: 0;DT*/
+
 }
 .menu li {
 	padding: 10px 0;
@@ -199,11 +203,35 @@ footer span {
 
 /*****TABLET*****/
 @media all and min-width(768px) {
+	.section-one, .section-two, .section-three {
+			width: 33%;
+
 
 }
-
+}
 
 /*****DESKTOP*****/
 @media all and min-width(1200px) {
+	header {
+		height: 110px;
+		width: 90%;
+		margin: 0 auto;
+		border-bottom: 3px solid #77a466;
+	}
 
+	header h1 {
+		margin: 0;
+		padding: 38px 0;
+		text-align: left;
+
+
+	}
+
+	.section-one, .section-two, .section-three {
+	    width: 33%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+}
 }
