@@ -82,7 +82,7 @@ header h1 span {
 
 header nav {
 
-	padding: 20px 0;/*46px 0;*/
+	padding: 20px 0;/**/
 }
 header nav ul {
 	list-style-type: none;
@@ -149,7 +149,8 @@ header nav ul li a{
 }
 
 .section-one h4 {
-	text-align: center;/*padding: 10px 0;DT*/
+	text-align: center;
+	padding: 10px 20px;
 }
 
 .section-two {
@@ -159,6 +160,7 @@ header nav ul li a{
 
 .section-two h4,
 .section-three h4 {
+	text-align: center;
 	padding: 10px 20px; /*padding: 10px 30px DT;*/
 }
 
@@ -181,6 +183,7 @@ header nav ul li a{
 .address {
 	font-size: 1em;
 	line-height: 24px;
+
 }
 
 /*The widths are in a percentage!*/
@@ -191,7 +194,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap;
+	/*flex-flow: row wrap;*/
 	text-align: center;
 }
 footer span {
@@ -202,7 +205,7 @@ footer span {
 }
 
 /*****TABLET*****/
-@media all and min-width(768px) {
+@media all and (min-width:768px) {
 	.section-one, .section-two, .section-three {
 			width: 33%;
 
@@ -211,27 +214,81 @@ footer span {
 }
 
 /*****DESKTOP*****/
-@media all and min-width(1200px) {
+@media all and (min-width:1200px) {
 	header {
 		height: 110px;
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
-		border-bottom: 3px solid #77a466;
+		border-bottom: none;
+		display: flex;
+
 	}
 
 	header h1 {
 		margin: 0;
 		padding: 38px 0;
 		text-align: left;
-
+		width: 50%;
 
 	}
 
+	header nav {
+		padding: 46px 0;
+	}
+	header nav ul li {
+		/*text-transform: uppercase;
+		font-weight: 700;
+		font-size: 0.875em;*/
+
+		padding: 0 10px;
+		display: inline;
+	}
+
+	.top-section,
+	.bottom-section {
+		display: flex;
+  	flex-flow: row wrap;
+
+}
+.bottom-section {
+	margin-bottom: 140px;
+}
 	.section-one, .section-two, .section-three {
-	    width: 33%;
+			height: 100px;
+			width: 33%;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			flex-wrap: wrap;
+}
+
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title h3 {
+	text-align: left;
+	padding-left: 38px;
+}
+.main-title p {
+	text-align: left;
+	padding-left: 38px;
+}
+
+.section-two h4,
+.section-three h4 {
+	width: 100%;
+	text-align: center;
+	padding: 10px 30px;
+}
+footer {
+	width: 90%;
+	border-top: 3px solid #eee;
+  /*margin-top: 120px;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 }
