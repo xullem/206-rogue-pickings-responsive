@@ -73,7 +73,7 @@ header {
 
 header h1 {
 	margin: 0;
-	padding: 20px 0; /*38px DT*/
+	padding: 20px 0;
 	text-align: center;
 	border-bottom: 3px solid #77a466;
 }
@@ -83,20 +83,22 @@ header h1 span {
 
 header nav {
 
-	padding: 20px 0;/**/
+	padding: 20px 0;
 }
+
 header nav ul {
 	list-style-type: none;
 	line-height: 1.4em;
 	margin: 0;
 	padding: 0;
 }
+
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
 	padding: 10px 10px;
-	/*display: inline; (not for mobile)*/
+
 }
 header nav ul li a{
 	text-decoration: none;
@@ -145,7 +147,6 @@ header nav ul li a{
 .section-three {
 	width: 100%;
 	height: auto;
-
 	border-top: 1px solid #eee;
 }
 
@@ -162,12 +163,12 @@ header nav ul li a{
 .section-two h4,
 .section-three h4 {
 	text-align: center;
-	padding: 10px 20px; /*padding: 10px 30px DT;*/
+	padding: 10px 20px;
 }
 
 .menu {
 	list-style: none;
-	padding: 10px 20px; /*	padding: 0;DT*/
+	padding: 10px 20px;
 
 }
 .menu li {
@@ -184,7 +185,6 @@ header nav ul li a{
 .address {
 	font-size: 1em;
 	line-height: 24px;
-
 }
 
 /*The widths are in a percentage!*/
@@ -195,7 +195,6 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/*flex-flow: row wrap;*/
 	text-align: center;
 }
 footer span {
@@ -210,14 +209,13 @@ footer span {
 	.section-one, .section-two, .section-three {
 		width: 33%;
 		height: 200px;
-		margin-bottom: 30px;
+		margin-bottom: 88px;
 }
 
 footer {
-
     text-align: center;
     width: 90%;
-}
+	}
 }
 
 /*****DESKTOP*****/
@@ -228,7 +226,6 @@ footer {
 		margin: 0 auto;
 		border-bottom: none;
 		display: flex;
-
 	}
 
 	header h1 {
@@ -236,7 +233,6 @@ footer {
 		padding: 38px 0;
 		text-align: left;
 		width: 50%;
-
 	}
 
 	header nav {
@@ -254,49 +250,49 @@ footer {
   	flex-flow: row wrap;
 
 }
-.bottom-section {
- /*margin-bottom: 25px;*/
-}
+
 	.section-one, .section-two, .section-three {
 			/*height: 200px;*/
 			width: 33%;
 			display: flex;
 			justify-content: center;
 			flex-wrap: wrap;
+			margin-bottom: 30px;
+
 }
 
-.main-image img {
-	width: 100%;
-	border-bottom: 3px solid #77a466;
+	.main-image img {
+		width: 100%;
+		border-bottom: 3px solid #77a466;
 }
 
-.main-title h3 {
-	text-align: left;
-	padding-left: 38px;
-}
-.main-title p {
-	text-align: left;
-	padding-left: 38px;
+	.main-title h3 {
+		text-align: left;
+		padding-left: 38px;
 }
 
-.section-two h4,
-.section-three h4 {
-	width: 100%;
-	text-align: center;
-	padding: 10px 30px;
+	.main-title p {
+		text-align: left;
+		padding-left: 38px;
 }
 
-.menu {
-	padding: 0;
-	margin: 0;
+	.section-two h4,
+	.section-three h4 {
+		width: 100%;
+		text-align: center;
+		padding: 10px 30px;
 }
-footer {
-	width: 90%;
-	border-top: 3px solid #eee;
-  /*margin-top: 120px;*/
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+
+	.menu {
+		padding: 0;
+		margin: 0;
 }
+	footer {
+		width: 90%;
+		border-top: 3px solid #eee;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
 }
