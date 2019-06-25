@@ -210,7 +210,7 @@ footer span {
 	.section-one, .section-two, .section-three {
 		width: 33%;
 		height: 200px;
-		margin-bottom: 100px;
+		margin-bottom: 30px;
 }
 
 footer {
@@ -255,10 +255,10 @@ footer {
 
 }
 .bottom-section {
- margin-bottom: 25px;
+ /*margin-bottom: 25px;*/
 }
 	.section-one, .section-two, .section-three {
-			height: 200px;
+			/*height: 200px;*/
 			width: 33%;
 			display: flex;
 			justify-content: center;
