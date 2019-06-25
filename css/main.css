@@ -235,11 +235,8 @@ footer span {
 	header nav {
 		padding: 46px 0;
 	}
-	header nav ul li {
-		/*text-transform: uppercase;
-		font-weight: 700;
-		font-size: 0.875em;*/
 
+	header nav ul li {
 		padding: 0 10px;
 		display: inline;
 	}
@@ -251,13 +248,12 @@ footer span {
 
 }
 .bottom-section {
-	margin-bottom: 140px;
+ margin-bottom: 25px;
 }
 	.section-one, .section-two, .section-three {
-			height: 100px;
+			height: 200px;
 			width: 33%;
 			display: flex;
-			align-items: center;
 			justify-content: center;
 			flex-wrap: wrap;
 }
@@ -281,6 +277,11 @@ footer span {
 	width: 100%;
 	text-align: center;
 	padding: 10px 30px;
+}
+
+.menu {
+	padding: 0;
+	margin: 0;
 }
 footer {
 	width: 90%;
