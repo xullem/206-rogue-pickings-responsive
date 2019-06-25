@@ -208,9 +208,15 @@ footer span {
 /*****TABLET*****/
 @media all and (min-width:768px) {
 	.section-one, .section-two, .section-three {
-			width: 33%;
+		width: 33%;
+		height: 200px;
+		margin-bottom: 100px;
+}
 
-
+footer {
+    
+    text-align: center;
+    width: 90%;
 }
 }
 
