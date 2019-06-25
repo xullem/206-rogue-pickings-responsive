@@ -1,3 +1,4 @@
+
 @font-face{
 	font-family: 'Wisdom Script';
 	src: url('../fonts/wisdom-script.otf') format('opentype');
@@ -128,15 +129,15 @@ header nav ul li a{
 
 }
 .main-title h3 {
-	text-align: center;
-	padding: 5px 0;
+	text-align: justify;
+	padding: 5px 10px;
 	color: #77a466;
 }
 .main-title p {
-	padding: 0;
+	padding: 0 10px;
 	font-size: 16px;
 	line-height: 25px;
-	text-align: center;
+	text-align: justify;
 }
 
 .section-one,
@@ -170,7 +171,7 @@ header nav ul li a{
 
 }
 .menu li {
-	padding: 10px 0;
+	padding: 10px 10px;
 	color:#77a466;
 }
 
